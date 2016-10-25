@@ -37,6 +37,7 @@ class ApiController extends Controller
     {
         return $this->response([
                 'status'=>'failed',
+
             'errors'=>[
                 'status_code'=>$this->getStatusCode(),
                 'message'=>$message
@@ -48,5 +49,7 @@ class ApiController extends Controller
     {
         return \Response::json($data,$this->getStatusCode());
     }
+
+
 
 }
