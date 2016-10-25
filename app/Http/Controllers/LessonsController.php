@@ -15,7 +15,7 @@ class LessonsController extends ApiController
     public function __construct(LessonTransformer $lessonTransformer)//双下划线 依赖注入
     {
         $this->lessonTransformer = $lessonTransformer;
-//        $this->middleware('auth.basic',['only'=>['store','update']]);
+        $this->middleware('auth.basic',['only'=>['store','update']]);
     }
     //
 
