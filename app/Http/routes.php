@@ -13,9 +13,9 @@
 
 /*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::group(['prefix'=>'api/v1'],function (){
+/*Route::group(['prefix'=>'api/v1'],function (){
 
     Route::resource('lessons','LessonsController');
     Route::resource('lessons','LessonsController@store');
@@ -31,6 +31,7 @@ $api->version('v1', function ($api) {
         $api->group(['middleware'=>'jwt.auth'],function ($api){
             $api->get('lessons','LessonsController@index');
             $api->get('lessons/{id}','LessonsController@show');
+            $api->post('user/me','AuthController@getAuthenticatedUser');
         });
 
     });

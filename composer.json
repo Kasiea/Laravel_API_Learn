@@ -15,7 +15,8 @@
         "symfony/css-selector": "2.8.*|3.0.*",
         "symfony/dom-crawler": "2.8.*|3.0.*",
         "dingo/api": "1.0.*@dev",
-        "tymon/jwt-auth": "0.5.*"
+        "tymon/jwt-auth": "0.5.*",
+        "lucadegasperi/oauth2-server-laravel": "5.1.*"
     },
     "autoload": {
         "classmap": [
